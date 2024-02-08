@@ -1,13 +1,5 @@
 
 
-
-
-
-// Display the current date in the header (added current time)
-var currentDay = dayjs().format("dddd, MMMM D, YYYY h:mm A");
-$("#currentDay").text(currentDay);
-
-
 // create Vars - for Cities, current cities, currentDate
 var cities = []
 // Vars for openweather API and URL
@@ -34,7 +26,16 @@ var icons = [
 
 init();
 
-function init(){ }
+function init(){
+
+  // Display the current date in the header (added current time)
+  var currentDay = dayjs().format("dddd, MMMM D, YYYY h:mm A");
+  $("#currentDay").text(currentDay);
+
+
+  
+
+ }
 
 
 //create eventlistener for search button
