@@ -1,0 +1,11 @@
+body {
+    background-color: bisque;
+}
+
+.search-item, #delete-history {
+    cursor: pointer;
+}
+
+.search-item:hover {
+    background-color: beige;
+}

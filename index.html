@@ -31,18 +31,15 @@
             <aside class="col-sm-3 bg-light px-2 my-3 rounded">
                 <!-- todo: create a search form with button * eventlister in js -->
                 <form id="search-form" class="form-group mt-1 pt-1">
-                    <input id="search" class="form-control" type="text" placeholder="Enter City" aria-label="Search" />
+                    <input id="search" class="form-control" type="text" placeholder="Enter City here"
+                        aria-label="Search" />
                     <button id="search-btn" class="btn btn-block btn-info mt-3" type="submit">
                         Search
                         <i class="fas fa-search ml-1"></i>
                     </button>
                 </form>
 
-                <!-- button for previous Searches-->
-                <button id="collapse-search-history" class="btn btn-info btn-block" type="button" data-toggle="collapse"
-                    data-target="#search-history" aria-expanded="false" aria-controls="collapseExample">Previous
-                    Searches</button>
-                </button>
+              <div class="bg-light px-2 my-3 rounded">Previous Searches:</div>
 
                 <!-- search history UL -->
                 <ul id="search-history" class="list-group collapse mt-3">
@@ -58,7 +55,7 @@
             <main class="col-sm-9 px-2 mt-3">
                 <section class="card">
                     <!-- city -->
-                    <div clas="card-header d-flex align-items-center list-group-item-info">
+                    <div class="card-header d-flex align-items-center list-group-item-info">
                         <p id="city" class="h2 my-0 mr-2">City will be here</p>
                         <i id="icon" class=""></i>
                     </div>
@@ -117,43 +114,97 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- section for 5 day Forecast -->
+
+                    <!-- Written section for 5 day forecast -->
                     <section class="card my-3">
                         <div class="card-header d-flex align-items-center list-group-item-info py-3">
-                          <p class="h2 my-0">5-Day Forecast</p>
+                            <p class="h2 my-0">5-Day Forecast</p>
                         </div>
-            
+
                         <div class="card-body py-0">
-            
-                          <!-- starting with 1 day to test -->
-                          <div class="row d-flex align-items-center py-3">
-                            <div class="col-2 d-flex justify-content-center">
-                              <i id="day-1-icon" class=""></i>
+                            <div class="row">
+                                <!-- Day 1 forecast -->
+                                <div class="col-sm-2">
+                                    <div class="py-3">
+                                        <i id="day-1-icon" class=""></i>
+                                        <p id="day-1-date" class="h5 text-info"></p>
+                                        <p id="day-1-year" class="h6 font-weight-light m-0"></p>
+                                        <p id="day-1-conditions" class="h5 text-info"></p>
+                                        <p class="h6 font-weight-light m-0">
+                                            <i class="fas fa-thermometer-quarter"></i>
+                                            <span id="day-1-temp"></span> /
+                                            <span id="day-1-humidity"></span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Day 2 forecast -->
+                                <div class="col-sm-2">
+                                    <div class="py-3">
+                                        <i id="day-2-icon" class=""></i>
+                                        <p id="day-2-date" class="h5 text-info"></p>
+                                        <p id="day-2-year" class="h6 font-weight-light m-0"></p>
+                                        <p id="day-2-conditions" class="h5 text-info"></p>
+                                        <p class="h6 font-weight-light m-0">
+                                            <i class="fas fa-thermometer-quarter"></i>
+                                            <span id="day-2-temp"></span> /
+                                            <span id="day-2-humidity"></span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Day 3 forecast -->
+                                <div class="col-sm-2">
+                                    <div class="py-3">
+                                        <i id="day-3-icon" class=""></i>
+                                        <p id="day-3-date" class="h5 text-info"></p>
+                                        <p id="day-3-year" class="h6 font-weight-light m-0"></p>
+                                        <p id="day-3-conditions" class="h5 text-info"></p>
+                                        <p class="h6 font-weight-light m-0">
+                                            <i class="fas fa-thermometer-quarter"></i>
+                                            <span id="day-3-temp"></span> /
+                                            <span id="day-3-humidity"></span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Day 4 forecast -->
+                                <div class="col-sm-2">
+                                    <div class="py-3">
+                                        <i id="day-4-icon" class=""></i>
+                                        <p id="day-4-date" class="h5 text-info"></p>
+                                        <p id="day-4-year" class="h6 font-weight-light m-0"></p>
+                                        <p id="day-4-conditions" class="h5 text-info"></p>
+                                        <p class="h6 font-weight-light m-0">
+                                            <i class="fas fa-thermometer-quarter"></i>
+                                            <span id="day-4-temp"></span> /
+                                            <span id="day-4-humidity"></span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Day 5 forecast -->
+                                <div class="col-sm-2">
+                                    <div class="py-3">
+                                        <i id="day-5-icon" class=""></i>
+                                        <p id="day-5-date" class="h5 text-info"></p>
+                                        <p id="day-5-year" class="h6 font-weight-light m-0"></p>
+                                        <p id="day-5-conditions" class="h5 text-info"></p>
+                                        <p class="h6 font-weight-light m-0">
+                                            <i class="fas fa-thermometer-quarter"></i>
+                                            <span id="day-5-temp"></span> /
+                                            <span id="day-5-humidity"></span>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-3 pr-0">
-                              <p id="day-1-date" class="h5 text-info"></p>
-                              <p id="day-1-year" class="h6 font-weight-light m-0"></p>
-                            </div>
-                            <div class="col-7">
-                              <p id="day-1-conditions" class="h5 text-info"></p>
-                              <p class="h6 font-weight-light m-0">
-                                <i class="fas fa-thermometer-quarter"></i>
-                                <span id="day-1-temp"></span> / 
-                                <span id="day-1-humidity"></span>
-                              </p>
-                            </div>
-                          </div>
+                        </div>
+                    </section>
 
 
 
+            </main>
         </div>
-
-        </section>
-
-
-        </main>
-    </div>
     </div>
 
 
