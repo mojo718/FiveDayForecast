@@ -13,4 +13,4 @@ https://mojo718.github.io/FiveDayForecast
 Screenshots Below:
 
 ![alt text](./assets/img/NYforecast.JPG)
-![alt text](./assets/img/NYforecast.JPG)
+![alt text](./assets/img/AtlantaForecast.JPG)
